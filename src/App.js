@@ -1,25 +1,24 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import PageTitle from './components/PageTitle';
+import List from './components/List'
+import ListTitle from './components/ListTitle';
+import ListEntry from './components/ListEntry';
+import ListFooter from './components/ListFooter';
+import ListItems from './components/ListItems';
+import listState from './containers/listState';
 
 function App() {
+  const { list, addList, removeItem, crossItem, onChange, submitHandler} = listState();
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+      <div>
+      <PageTitle/>
+      <List>
+        <ListTitle/>
+        <ListEntry addEntry={listItem => addList(listItem)} />
+        <ListItems items={list} removeItem={removeItem} crossItem={crossItem} onChange={onChange} submitHandler={submitHandler} />
+        <ListFooter/>
+      </List>
+      </div>  
   );
 }
 
