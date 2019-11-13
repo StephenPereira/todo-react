@@ -6,7 +6,7 @@ import ListEntry from './components/ListEntry';
 import ListFooter from './components/ListFooter';
 import ListItems from './components/ListItems';
 import listState from './containers/listState';
-// The main file for the App. All the components are used here.
+// The main js file where all the components are assembled. 
 function App() {
   const { list, addList, removeItem, crossItem, onChange, submitHandler} = listState();
   return (

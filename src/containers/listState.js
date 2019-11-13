@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 // Manages state of the List. When the value of the List changes, the state is updated and the update is sent to localStorage
-// When the X button is pressed, it deletes the entry from the list, updates localStorage and state
+// When the X button is pressed, it deletes the entry from the list, updates localStorage and state.
 export default () => {
     // If there is localStorage, we grab whatever List is stored there. If not, we set the List to an empty string
     // We use JSON.parse() to convert the data back into an array with keys

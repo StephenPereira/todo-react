@@ -1,5 +1,5 @@
 import React from 'react';
-
+// Component for the list title. Does not change or have any managed state.
 const pageTitle = () => {
     return (
         <div className="title">

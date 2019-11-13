@@ -1,5 +1,5 @@
 import React from 'react';
-
+// Component for the botton part of the list where the copyright goes. 
 const listFooter = () => {
     return (
         <div className="list-bottom">

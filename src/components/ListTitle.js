@@ -1,6 +1,6 @@
 import React from 'react';
 import titleState from '../containers/titleState';
-
+// Component for the title of the list. It's values are managed by state.
 const ListTitle = React.memo(props => {
     const {title, titleLen, onChange, updateTitle, submitHandler, clearTitle} = titleState();
 
