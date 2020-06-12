@@ -1,6 +1,6 @@
 import React from 'react';
 import entryState from '../containers/entryState';
-
+// Component for the entry field of the list. This is where users will input their todo list items.
 const listEntry = ({ addEntry }) => {
     const {entry, entryLen, onChange, clearEntry} = entryState();
     return (

@@ -1,5 +1,5 @@
 import { useState } from 'react';
-// Manages state of the title. When the value of the title changes, the state is updated and the update is sent to localStorage
+// Manages the state of the title. When the value of the title changes, the state is updated and the update is sent to localStorage
 // When the X button is pressed, it clears the entry. It only appears when the text length is greater than 0.
 export default () => {
     // If there is localStorage, we grab whatever title is stored there. If not, we set the title to an empty string
